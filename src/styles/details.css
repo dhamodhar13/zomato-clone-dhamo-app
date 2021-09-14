@@ -1,0 +1,211 @@
+.detailsImage {
+    border-radius: 1rem;
+}
+
+.galleryButton {
+    position:absolute;
+    top: 65%;
+    left: 75%;
+}
+
+.galleryCarouselImage {
+    height: auto;
+    width: auto;
+}
+
+.restaurant-name-line{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.restaurant-name-details {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #192f60;
+}
+
+#overview-tab, #contact-tab {
+    color: #192f60;
+    font-weight: 500;
+}
+
+#overview-tab.active, #contact-tab.active {
+    border: transparent !important;
+    border-bottom: solid 2px red !important;
+}
+
+.placeOnlineOrder {
+    /* position: relative;
+    left: 56%;
+    top: 50%; */
+    border: none;
+    background-color: #ce0505;
+    border-radius: 0.5rem;
+    padding: 10px 25px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    float: right;
+}
+
+#restaurantDetails{
+    margin-bottom: 1rem;
+    border-bottom: solid 1px #dedede;
+}
+
+.overview-tab-heading {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #192f60;
+    padding-bottom: 1rem;
+}
+
+.overview-sub-heading, .contact-sub-heading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #192f60;
+}
+
+.overview-contents {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #192f60;
+    padding-bottom: 1rem;
+}
+
+.contact-contents {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #192f60;
+    padding-bottom: 1rem;
+}
+
+#phone-number {
+    color: #d11414;
+}
+.modal-card-item {
+    border:none;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+.close-button {
+    float: right;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.modal-restaurant-name {
+    font-family: Poppins;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.modal-card-item-name, .modal-card-item-price {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #192f60;
+    line-height: 1.5rem;
+    padding-left: 10px;
+}
+
+.modal-card-item-desc {
+    font-size: 0.85rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+    padding-left: 10px;
+}
+
+.modal-card-item-image{
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.modal-item-checkout {
+    position: fixed;
+    left: 5%;
+    padding-bottom: 20px;
+}
+
+.add-button {
+    position: relative;
+    width: 90px;
+    background-color: #256d13;
+    border: none;
+    border-radius: 5px;
+    color:#efefef;
+    font-weight: 500;
+}
+
+.add-number {
+    border: solid 1px #192f60;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.minus-button {
+    width: 25px;
+    border: none;
+    background-color: #3d51aa;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #fff;
+ 
+}
+.item-qty{
+    width: 100%;
+    padding: 0 15px;
+    color: #192f60;
+    font-family: Poppins;
+    font-weight: 600;
+
+}
+.plus-button {
+    width: 25px;
+    border: none;
+    background-color: #3d51aa;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.input-payment-form {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: solid 1px lightblue;
+    border-radius: 0.5rem;
+}
+
+.label-payment-form {
+    display: inline-block;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    color: #555;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button-proceed-checkout{
+    float: right;
+    width: fit-content;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    /* margin: 1rem; */
+}
