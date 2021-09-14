@@ -180,6 +180,7 @@ class Details extends Component{
 
     getData = async (data) => {
         try {
+            console.log(data)
             const response = await fetch(`https://zcad-server.herokuapp.com/payment`, {
                 method: "POST",
                 headers: {
