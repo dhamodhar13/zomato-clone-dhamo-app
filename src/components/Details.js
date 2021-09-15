@@ -189,6 +189,7 @@ class Details extends Component{
                 },
                 body: JSON.stringify(data)
             });
+                console.log(response);
             return await response.json();
         } catch (err) {
             return console.log(err);
