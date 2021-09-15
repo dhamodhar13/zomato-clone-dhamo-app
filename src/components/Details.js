@@ -178,10 +178,9 @@ class Details extends Component{
         form.remove()
     }
 
-    getData = async (data) => {
+    getData = (data) => {
         console.log(data)
-        try {
-            const response = await fetch(`https://zcad-server.herokuapp.com/payment`, {
+            return fetch(`https://zcad-server.herokuapp.com/payment`, {
                 method: "POST",
                 mode: 'no-cors',
                 headers: {
@@ -189,11 +188,7 @@ class Details extends Component{
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(data)
-            });
-            return await response.json();
-        } catch (err) {
-            return console.log(err);
-        }
+            }).then(response => response.json()).catch(err => console.log(err))
     }
 
     handlePayment = () => {
