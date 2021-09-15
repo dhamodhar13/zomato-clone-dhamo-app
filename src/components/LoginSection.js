@@ -128,7 +128,6 @@ class LoginSection extends Component {
             headers: { 'Content-Type': 'application/json' },
             data: reqObj
         }).then(response => {
-            console.log(response);
             localStorage.setItem('isLoggedIn', true);
             localStorage.setItem('loggedInUserName', response.data.userName);
             localStorage.setItem('loggedInUserEmail', userEmail);

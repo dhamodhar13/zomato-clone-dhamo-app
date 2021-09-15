@@ -179,7 +179,6 @@ class Details extends Component{
     }
 
     getData = async (data) => {
-        console.log(data)
             try {
             const response = await fetch(`https://zcad-server.herokuapp.com/payment`, {
                 method: "POST",
@@ -189,7 +188,6 @@ class Details extends Component{
                 },
                 body: JSON.stringify(data)
             });
-                console.log(response);
             return await response.json();
         } catch (err) {
             return console.log(err);
@@ -208,7 +206,6 @@ class Details extends Component{
                     headers: { 'Content-Type': 'application/json' },
                     data: reqObjEmail
                 }).then(response => {
-                    console.log(response);
                     if (response.data.message === 'proceed payment') {
                         this.getData({ email: userEmail, amount: subtotal }).then(response => {
                     
