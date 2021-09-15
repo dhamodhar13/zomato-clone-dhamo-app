@@ -183,7 +183,6 @@ class Details extends Component{
             try {
             const response = await fetch(`https://zcad-server.herokuapp.com/payment`, {
                 method: "POST",
-                mode: 'no-cors',
                 headers: {
                     Accept: "application/json",
                     "Content-Type": "application/json"
