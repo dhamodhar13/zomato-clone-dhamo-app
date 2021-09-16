@@ -209,3 +209,36 @@
     font-weight: 500;
     /* margin: 1rem; */
 }
+
+.payment-alert {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.value {
+    color: darkgreen;
+    font-weight: 600;
+}
+
+.credentials-left{
+    text-align: right;
+}
+
+.credentials-right{
+    text-align: left;
+}
+
+.alert-title{
+    color: yellow;
+    background-color: darkgrey;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.alert-note {
+    padding-top: 0.5rem;
+    color: red;
+}

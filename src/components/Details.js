@@ -415,10 +415,54 @@ class Details extends Component{
 
                 <Modal isOpen={paymentAlertIsOpen} style={customStylesPaymentForm}>
                     <div className='payment-alert'>
-                        <h3>Please do not use your original credentials for payment</h3>
-                        <h3>It is a test payment gateway</h3>
-                        <h4>Please use the following credetials for making payment</h4>
-                        <button type='button' className=' btn btn-danger button-proceed-checkout'  onClick={this.handlePayment}>Proceed to pay</button>
+                        <div className="alert-title">It is a test payment gateway..</div>
+                        <h6 className="alert-note">*Please do not use your original credentials instead use the following credetials for making payment</h6>
+                        <hr/>
+                        <section className='row'>
+                            <h6 className="col-12">Test Wallet Credentials</h6>
+                            <div className="credentials-left col-6">
+                                <span className='col-3'>Phone</span>
+                            </div>
+                            <div className="credentials-right col-6">
+                                <span className='col-3 value'>7777777777</span>
+                            </div>
+                            <div className="credentials-left col-6">
+                                <span className='col-3'>Password</span>
+                            </div>
+                            <div className="credentials-right col-6">
+                                <span className='col-3 value'>Paytm12345</span>
+                            </div>
+                            <div className="credentials-left col-6">
+                                <span className='col-3'>OTP</span>
+                            </div>
+                            <div className="credentials-right col-6">
+                                <span className='col-3 value'>489871</span>
+                            </div>
+                        </section>
+                        <hr/>
+                        <section className='row'>
+                            <h6 className="col-12">Test Card Credentials</h6>
+                            <div className="credentials-left col-6">
+                                <span className='col-3'>Card Number</span>
+                            </div>
+                            <div className="credentials-right col-6">
+                                <span className='col-3 value'>Any Visa or Master Card</span>
+                            </div>
+                            <div class="credentials-left col-6">
+                                <span className='col-3'>Expiration Month & Year</span>
+                            </div>
+                            <div className="credentials-right col-6">
+                                <span className='col-3 value'>Any Future month and Year</span>
+                            </div>
+                            <div className="credentials-left col-6">
+                                <span className='col-3'>CVV</span>
+                            </div>
+                            <div className="credentials-right col-6">
+                                <span className='col-3 value'>123</span>
+                            </div>
+                        </section>
+                        
+                        <button className='btn btn-danger button-proceed-checkout'>Proceed to pay</button>
                     </div>
                 </Modal>
         </div>
