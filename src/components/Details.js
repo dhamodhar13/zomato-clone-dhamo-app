@@ -61,7 +61,8 @@ class Details extends Component{
             userEmail: undefined,
             userAddress: undefined,
             userPhone: undefined,
-            orderedItems: []
+            orderedItems: [],
+            paymentAlertIsOpen: false
         }
     }
 
@@ -261,8 +262,12 @@ class Details extends Component{
         }
     }
 
+    handlePaymentAlert = () => {
+        this.setState({paymentAlertIsOpen:true})
+    }
+
     render() {
-        const { restaurant, itemModalIsOpen, itemsList, subtotal, galleryModalIsOpen, paymentFormIsOpen, userName, userEmail, userAddress, userPhone } = this.state;
+        const { restaurant, itemModalIsOpen, itemsList, subtotal, galleryModalIsOpen, paymentFormIsOpen, userName, userEmail, userAddress, userPhone, paymentAlertIsOpen } = this.state;
         let isLoggedIn = localStorage.getItem('isLoggedIn');
         return (
             <div>
@@ -400,12 +405,20 @@ class Details extends Component{
                                             <input name='userAddress' type='text' value={userAddress} className='input-payment-form input-address col-9' onChange={this.handleInputChange} placeholder='Enter your address' />
                                         </div>
                                             
-                                        <button type='button' className=' btn btn-danger button-proceed-checkout'  onClick={this.handlePayment}>Proceed to pay</button>
-                                        
+                                        <button type='button' className=' btn btn-danger button-proceed-checkout'  onClick={this.handlePaymentAlert}>Proceed to pay</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </Modal>
+
+                <Modal isOpen={paymentAlertIsOpen} style={customStylesPaymentForm}>
+                    <div className='payment-alert'>
+                        <h3>Please do not use your original credentials for payment</h3>
+                        <h3>It is a test payment gateway</h3>
+                        <h4>Please use the following credetials for making payment</h4>
+                        <button type='button' className=' btn btn-danger button-proceed-checkout'  onClick={this.handlePayment}>Proceed to pay</button>
                     </div>
                 </Modal>
         </div>
