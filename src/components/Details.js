@@ -465,7 +465,7 @@ class Details extends Component{
                             </div>
                         </section>
                         
-                        <button className='btn btn-danger button-proceed-checkout'>Proceed to pay</button>
+                        <button className='btn btn-danger button-proceed-checkout' onClick={this.handlePayment}>Proceed to pay</button>
                     </div>
                 </Modal>
         </div>
