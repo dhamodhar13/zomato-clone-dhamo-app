@@ -263,7 +263,7 @@ class Details extends Component{
     }
 
     handlePaymentAlert = () => {
-        this.setState({paymentAlertIsOpen:true})
+        this.setState({paymentAlertIsOpen:true, paymentFormIsOpen: false})
     }
 
     render() {
@@ -414,6 +414,9 @@ class Details extends Component{
                 </Modal>
 
                 <Modal isOpen={paymentAlertIsOpen} style={customStylesPaymentForm}>
+                    <div>
+                        <i className='fa fa-close close-button' onClick={ ()=>this.handleCloseModal('paymentAlertIsOpen', false)}/>
+                    </div>
                     <div className='payment-alert'>
                         <div className="alert-title">It is a test payment gateway..</div>
                         <h6 className="alert-note">*Please do not use your original credentials instead use the following credetials for making payment</h6>
