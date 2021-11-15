@@ -74,18 +74,18 @@
 }
 
 .logout-button {
-  color: #ffffff;
+  color: #cc2367;
   width: 100%;
   font-family: Poppins;
   font-size: 16px;
   border: solid 2px #ffffff;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #fff;
   /* margin: 1rem; */
 }
 
 .logged-user-name {
-  color: #ffffff;
+  color: #2323cd;
   font-family: Poppins;
   font-size: 16px;
   border: solid 2px transparent;
@@ -99,7 +99,7 @@
 }
 
 .user-name-down-arrow {
-  color: #ffffff;
+  color: #2323cd;
   /* font-family: Poppins; */
   font-size: 16px;
   border: solid 2px transparent;
@@ -112,10 +112,16 @@
   /* padding-right: 1.5rem; */
 }
 
-.logged-user-dropdown {
-  margin-right: 2rem;
-  background-color: transparent;
+#logged-user-dropdown {
+  /* margin-right: 1rem; */
+  width: 100%;
+  background-color: #fff;
   border: transparent;
+  border-radius: 0.5rem;
+}
+
+.logged-user-dropdown-home {
+  margin-right: 1rem;
 }
 
 .logged-user-dropdown-menu {
@@ -312,6 +318,10 @@
   .already-have-account {
     font-size: 12px !important;
   }
+
+  .logged-user-dropdown-home {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 475px) {
@@ -400,6 +410,9 @@
   .already-have-account {
     font-size: 16px;
   }
+  .logged-user-dropdown-home {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -422,5 +435,9 @@
   .create-account-sm {
     width: 100%;
     margin-left: 0;
+  }
+
+  .logged-user-dropdown-home {
+    margin-right: 0;
   }
 }

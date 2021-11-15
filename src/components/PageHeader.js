@@ -649,4 +649,4 @@ class PageHeader extends Component {
   }
 }
 
-export default PageHeader;
+export default withRouter(PageHeader);

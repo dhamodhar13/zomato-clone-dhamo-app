@@ -144,13 +144,6 @@
   color: #ce0505;
 }
 
-.logged-user-dropdown-home {
-  margin-right: 2rem;
-  background-color: transparent;
-  border: transparent;
-  display: inline-block;
-}
-
 .logout-home {
   display: inline-block;
 }
