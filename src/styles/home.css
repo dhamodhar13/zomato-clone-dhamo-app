@@ -1,107 +1,127 @@
 .logo {
-    position: absolute;
-    top: 10%;
-    left: 45%;
-    height: 80px;
-    width: 80px;
-    font-family: Poppins;
-    font-size: 50px;
-    font-weight: 600;
-    background-color: #ffffff;
-    border-radius: 50%;
-    color: #eb2929;
-    text-align: center;
+  /* position: absolute;
+  top: 10%;
+  left: 45%; */
+  height: 80px;
+  width: 80px;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #eb2929;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .pageHeader {
-    position: absolute;
-    top: 27%;
-    left: 27%;
-    font-family: Poppins;
-    font-size: 28px;
-    font-weight: 600;
-    color: #ffffff;
+  /* position: absolute;
+  top: 27%;
+  left: 27%; */
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.wallpaper {
+  position: relative;
+  box-sizing: border-box;
+  background-image: url("../assets/homepageimg.png");
+  background-position: center;
+  background-size: cover;
+  height: 375px;
+}
+
+.wallpaper-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .searchBox {
-    position: absolute;
-    top: 40%;
-    left: 28%;
-    font-family: Poppins;
-    color: #636f88;
+  /* position: absolute;
+  top: 40%;
+  left: 28%; */
+  font-family: Poppins;
+  color: #636f88;
 }
 
 .locSearch {
-    display: inline-block;
-    font-family: Poppins;
-    font-size: 14px;
-    color: #636f88;
-    border-radius: 5px;
-    background-color: #ffffff;
-    width: 200px;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #636f88;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 200px;
 }
 
 .restSearch {
-    display: inline-block;
-    font-family: Poppins;
-    font-size: 14px;
-    color: #636f88;
-    border-radius: 5px;
-    background-color: transparent;
-    width: 340px;
-    margin-left: 10px;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #636f88;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 340px;
+  margin-left: 10px;
 }
 
 .rest-search-symbol {
-    z-index: 0 !important;
-    width: 10%;
-    font-size: 1rem;
-    text-align: center;
-    padding: 0.4rem;
-    border-radius: 5px;
+  z-index: 0 !important;
+  width: 10%;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 5px;
 }
 
 .restSearch li {
-    list-style: none;
-    background-color: #ddd;
-    cursor: pointer;
-    line-height: 1.5rem;
-    border: solid 1px #bbb;
-    background-image: linear-gradient(90deg, lightgray 10px);
-    padding: 10px;
-    width: 100%;
-    color: #1111ff;
-    font-family: Poppins;
-    font-weight: 500;
-    /* font-size: 1rem; */
+  list-style: none;
+  background-color: #ddd;
+  cursor: pointer;
+  line-height: 1.5rem;
+  border: solid 1px #bbb;
+  background-image: linear-gradient(90deg, lightgray 10px);
+  padding: 10px;
+  width: 100%;
+  color: #1111ff;
+  font-family: Poppins;
+  font-weight: 500;
+  /* font-size: 1rem; */
 }
 
-.restSearch li:hover{
-    text-decoration: underline;
+.restSearch li:hover {
+  text-decoration: underline;
 }
 
 #restaurant-serach {
-    width: 80%;
+  width: 80%;
 }
 
 .login-section {
-    position: absolute;
-    top: 7%;
-    right: 12%;
-    color: #ffffff;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.5;
-    /* background-color: #fff; */
+  position: absolute;
+  top: 7%;
+  right: 12%;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  /* background-color: #fff; */
 }
 
 .login-home {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .login-home:hover {
-color: #eb2929;
+  color: #eb2929;
 }
 
 /*.login {
@@ -113,103 +133,135 @@ color: #eb2929;
     color: yellow;
 }*/
 
-.create-account-home {
-    display: inline-block;
-    border: solid 2px white;
-    margin-left: 10px;
-    font-weight: 500;
-}
+/* .create-account-home {
+  display: inline-block;
+  border: solid 2px white;
+  margin: 1rem;
+  font-weight: 500;
+} */
 
-.create-account-home:hover{
-    color: #ce0505;
+.create-account-home:hover {
+  color: #ce0505;
 }
 
 .logged-user-dropdown-home {
-    margin-right: 2rem;
-    background-color:transparent;
-    border: transparent;
-    display: inline-block;
+  margin-right: 2rem;
+  background-color: transparent;
+  border: transparent;
+  display: inline-block;
 }
 
 .logout-home {
-    display: inline-block;
+  display: inline-block;
 }
 
 .heading {
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 600;
-    color: #192f60;
-    margin: 15px 0 10px 0;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  color: #192f60;
+  margin: 15px 0 10px 0;
 }
 
 .subHeading {
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 300;
-    color: #8c96ab;
-    margin: 10px 0 10px 0;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 300;
+  color: #8c96ab;
+  margin: 10px 0 10px 0;
 }
 
 .block {
-    margin: 10px 0 15px 20px;
-    background-color:#ffffff;
-    box-shadow: 0 3px 6px 0 rgba(22, 70, 226, 0.2);
-    width: fit-content;
+  margin: 10px 5px 10px 5px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px 0 rgba(22, 70, 226, 0.2);
+  /* width: fit-content; */
 }
 
-.block:hover{
-    cursor: pointer;
+.block:hover {
+  cursor: pointer;
 }
 
 .image {
-    display: inline-block;
-    width: 140px;
-    height: 140px;
+  display: inline-block;
+  width: 45%;
+  height: 140px;
 }
 
 .content {
-    display: inline-block;
-    vertical-align: top;
-    width: 180px;
-    height: 100px;
-    
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+  height: 100px;
+  margin-left: 10px;
 }
 
 .content-title {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #192f60;
-    margin: 20px 20px 5px 10px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #192f60;
+  /* margin: 20px 20px 5px 10px; */
 }
 
 .content-content {
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.2;
-    color: #8c96ab;
-    margin: 5px 20px 10px 10px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #8c96ab;
+  /* margin: 5px 20px 10px 10px; */
 }
 
-/*Media queries for xs(<576px) breakpoint*/
+.render-suggestions {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.render-suggestions li {
+  background-color: white;
+  color: #ce0505;
+}
+
+.Modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: papayawhip;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rebeccapurple;
+}
+
+/*Media queries for (425px to 576px) breakpoint*/
 @media only screen and (max-width: 576px) {
-.login {
-    display: none;
-}
+  .wallpaper-content {
+    width: 80%;
+  }
 
-.create-account {
-    display: none;
-}
+  .create-account-home {
+    display: inline-block;
+    border: solid 2px white;
+    font-weight: 500;
+    margin-left: 0;
+  }
 
-.logo {
-    position: absolute;
+  .logo {
+    /* position: absolute;
     top: 10%;
-    left: 45%;
-    height: 60px;
-    width: 60px;
+    left: 45%; */
+    height: 50px;
+    width: 50px;
     font-family: Poppins;
     font-size: 40px;
     font-weight: 600;
@@ -217,96 +269,108 @@ color: #eb2929;
     border-radius: 50%;
     color: #eb2929;
     text-align: center;
-}
+  }
 
-.pageHeader {
-    position: absolute;
+  .pageHeader {
+    /* position: absolute;
     top: 25%;
-    left: 9%;
+    left: 19%; */
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #ffffff;
-}
+  }
 
-.searchBox {
-    position: absolute;
-    top: 35%;
-    left: 25%;
-    font-family: Poppins;
-    color: #636f88;
-}
-
-.locSearch {
-    display: inline-block;
-    font-family: Poppins;
-    font-size: 14px;
-    color: #636f88;
-    border-radius: 5px;
-    background-color: #ffffff;
-    margin-bottom: 1rem;
-}
-
-.locSearch button {
-    width: 240px;
-}
-
-.restSearch {
-    display: inline-block;
-    font-family: Poppins;
-    font-size: 14px;
-    color: #636f88;
-    border-radius: 5px;
-    background-color: #ffffff;
-    width: 240px;
-}
-}
-
-/*Media queries for sm(576px to 768px) breakpoint*/
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-.login {
-    display: none
-}
-
-.create-account {
-    display: none;
-    
-}
-
-.logo {
-    position: absolute;
-    top: 10%;
-    left: 45%;
-    height: 60px;
-    width: 60px;
-    font-family: Poppins;
-    font-size: 40px;
-    font-weight: 600;
-    background-color: #ffffff;
-    border-radius: 50%;
-    color: #eb2929;
-    text-align: center;
-}
-
-.pageHeader {
-    position: absolute;
-    top: 25%;
-    left: 12%;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.searchBox {
-    position: absolute;
+  .searchBox {
+    /* position: absolute;
     top: 40%;
-    left: 12%;
+    left: 21%; */
     font-family: Poppins;
     color: #636f88;
+  }
+
+  .locSearch {
+    display: block !important;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #636f88;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    width: 100% !important;
+  }
+
+  /* .locSearch button {
+    width: 240px;
+  } */
+
+  .restSearch {
+    display: block !important;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #636f88;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 100% !important;
+    margin-left: 0;
+    /* width: 300px; */
+  }
 }
 
-.locSearch {
+/*Media queries for (576px to 768px) breakpoint*/
+@media only screen and (max-width: 768px) {
+  /* .login {
+    display: none;
+  }
+
+  .create-account {
+    display: none;
+  } */
+
+  .create-account-home {
+    display: inline-block;
+    border: solid 2px white;
+    font-weight: 500;
+  }
+
+  .wallpaper-content {
+    width: 80%;
+  }
+
+  .logo {
+    /* position: absolute;
+    top: 10%;
+    left: 45%; */
+    height: 50px;
+    width: 50px;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #eb2929;
+    text-align: center;
+  }
+
+  .pageHeader {
+    /* position: absolute;
+    top: 25%;
+    left: 19%; */
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .searchBox {
+    /* position: absolute;
+    top: 40%;
+    left: 21%; */
+    font-family: Poppins;
+    color: #636f88;
+  }
+
+  .locSearch {
     display: inline-block;
     font-family: Poppins;
     font-size: 14px;
@@ -314,37 +378,39 @@ color: #eb2929;
     border-radius: 5px;
     background-color: #ffffff;
     margin-bottom: 1rem;
-}
+    width: 40%;
+  }
 
-.locSearch button {
+  /* .locSearch button {
     width: 240px;
-}
+  } */
 
-.restSearch {
+  .restSearch {
     display: inline-block;
     font-family: Poppins;
     font-size: 14px;
     color: #636f88;
     border-radius: 5px;
     background-color: #ffffff;
-    width: 250px;
-}
+    width: 55%;
+    /* width: 300px; */
+  }
 }
 
-/*Media queries for md(768px to 992px) breakpoint*/
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-.login {
+/*Media queries for (768px to 1024px) breakpoint*/
+@media only screen and (max-width: 1024px) {
+  /* .login {
     display: none;
-}
+  }
 
-.create-account {
-    display: none; 
-}
+  .create-account {
+    display: none;
+  } */
 
-.logo {
-    position: absolute;
+  .logo {
+    /* position: absolute;
     top: 10%;
-    left: 45%;
+    left: 45%; */
     height: 60px;
     width: 60px;
     font-family: Poppins;
@@ -354,27 +420,27 @@ color: #eb2929;
     border-radius: 50%;
     color: #eb2929;
     text-align: center;
-}
+  }
 
-.pageHeader {
-    position: absolute;
+  .pageHeader {
+    /* position: absolute;
     top: 25%;
-    left: 19%;
+    left: 19%; */
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
     color: #ffffff;
-}
+  }
 
-.searchBox {
-    position: absolute;
+  .searchBox {
+    /* position: absolute;
     top: 40%;
-    left: 21%;
+    left: 21%; */
     font-family: Poppins;
     color: #636f88;
-}
+  }
 
-.locSearch {
+  .locSearch {
     display: inline-block;
     font-family: Poppins;
     font-size: 14px;
@@ -382,19 +448,21 @@ color: #eb2929;
     border-radius: 5px;
     background-color: #ffffff;
     margin-bottom: 1rem;
-}
+    width: 40%;
+  }
 
-.locSearch button {
+  /* .locSearch button {
     width: 240px;
-}
+  } */
 
-.restSearch {
+  .restSearch {
     display: inline-block;
     font-family: Poppins;
     font-size: 14px;
     color: #636f88;
     border-radius: 5px;
     background-color: #ffffff;
-    width: 300px;
-}
+    width: 55%;
+    /* width: 300px; */
+  }
 }
